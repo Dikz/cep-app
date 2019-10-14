@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="src/css/style.css">
+<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+<div class="container">
+	<div class="row mt-5">
+
+		<h2 class="text-light ml-2">🤖 Testando uma API</h2>
+
+		<div class="input-group col-12 mt-2 mb-2">
+			<div class="input-group-prepend">
+				<div class="input-group-text">CEP</div>
+			</div>
+			<input type="text" class="form-control" id="cep" name="cep" placeholder="Insira o CEP" maxlength="8">
+		</div>
+
+	</div>
+
+	<div class="row">
+		<div class="col-12" id="resultado"></div>
+	</div>
+</div>
+
+<script>
+	window.$ = require('jquery')
+	require('./renderer.js')
+	require('bootstrap')
+</script>
